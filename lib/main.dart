@@ -11,13 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
+      initialRoute: "/",
       routes: {
-        "/": (context) => home_page(),
-        "/home": (context) => login_page(),
+        "/": (context) => login_page(),
+        "/home": (context) => home_page(),
       },
     );
   }
