@@ -6,7 +6,6 @@ class login_page extends StatelessWidget {
     return Material(
       color: Colors.white,
       child: Column(
-        children: [
           Image.asset(
             "assets/images/login_image.png",
             fit: BoxFit.cover,
@@ -14,7 +13,10 @@ class login_page extends StatelessWidget {
           SizedBox(
             height: 15,
           ),
-          Text(
+                 TextFormField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+        Text(
             "Welcome!!!",
             style: TextStyle(
               fontSize: 25,
@@ -31,10 +33,8 @@ class login_page extends StatelessWidget {
                   decoration: InputDecoration(
                       hintText: "Enter Your Username", labelText: "UserName"),
                 ),
-                TextFormField(
-                  obscureText: true,
-                  decoration: InputDecoration(
-                    hintText: "Enter Your Password",
+        children: [
+                     hintText: "Enter Your Password",
                     labelText: "Password",
                   ),
                 ),
